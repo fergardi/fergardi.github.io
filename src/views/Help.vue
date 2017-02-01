@@ -1,5 +1,6 @@
 <template lang="pug">
-  p(v-once) Help
+  #help(v-once)
+    p Help
 </template>
 
 <script>
