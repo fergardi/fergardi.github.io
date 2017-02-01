@@ -10,17 +10,18 @@
         router-link.md-icon-button(tag="md-button", to="/info")
           md-icon info
     md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
-      md-toolbar.md-account-header
-        md-list.md-transparent
-          md-list-item.md-avatar-list
-            md-avatar.md-large
-              img(src="dist/img/logo.jpg")
-          md-list-item
-            .md-list-text-container
-              span Fergardi
-              span fergardi@gmail.com
-            md-button.md-icon-button.md-list-action(href="mailto:fergardi@gmail.com")
-              md-icon mail
+      md-whiteframe(md-elevation="3")
+        md-toolbar.md-account-header
+          md-list.md-transparent
+            md-list-item.md-avatar-list
+              md-avatar.md-large
+                img(src="dist/img/logo.jpg")
+            md-list-item
+              .md-list-text-container
+                span Fergardi
+                span fergardi@gmail.com
+              md-button.md-icon-button.md-list-action(href="mailto:fergardi@gmail.com")
+                md-icon mail
       md-list
         md-list-item(v-on:click="close()")
           router-link(to="/home")
@@ -74,6 +75,8 @@
   .content
     padding: 0 !important
     transition: all .4s cubic-bezier(.25,.8,.25,1)
+  .router-link-active
+    background-color: rgba(153, 153, 153, 0.2);
   @media screen and (min-width: 1280px)
     .app
       padding-left: 304px
