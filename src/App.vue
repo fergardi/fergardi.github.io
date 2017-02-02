@@ -73,10 +73,17 @@
     overflow: auto
     height: 100%
   .content
-    padding: 0 !important
     transition: all .4s cubic-bezier(.25,.8,.25,1)
   .router-link-active
     background-color: rgba(153, 153, 153, 0.2);
+  .no-padding
+    padding: 0 !important
+  .padding
+    padding: 16px !important
+  .md-card
+    width: 100%
+  .md-heading
+    padding: 16px
   @media screen and (min-width: 1280px)
     .app
       padding-left: 304px

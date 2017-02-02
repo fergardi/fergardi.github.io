@@ -25,9 +25,6 @@ var router = new VueRouter({
 // material
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
-  default: {
-    primary: 'yellow'
-  },
   home: {
     primary: 'red'
   },
@@ -43,9 +40,6 @@ Vue.material.registerTheme({
 Vue.filter('date', (timestamp) => {
   return moment(parseInt(timestamp)).format('D/M/YYYY HH:mm:ss')
 })
-
-// ripple
-Vue.material.inkRipple = false
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,18 +1,35 @@
 <template lang="pug">
   #home
-    md-card(v-for="card in cards", v-bind:class="'md-' + card.theme")
-      md-card-header
-        .md-title {{ card.title }}
-        .md-subhead {{ card.subtitle }}
-      md-card-media-cover(md-solid)
-        md-card-media(md-ratio="16:9")
-          img(v-bind:src="'dist/img/' + card.image")
-        md-card-area
-          md-card-header
-            .md-title {{ card.title }}
-            .md-subhead {{ card.subtitle }}
-      md-card-content
-        span {{ card.description }}
+    h2.md-heading hola
+    md-tabs(md-fixed)
+      md-tab(md-label="personal", md-icon="done")
+        md-layout
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p izquierda
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p derecha
+      md-tab.no-padding(md-label="projects", md-icon="done")
+        md-layout
+          md-layout(v-for="card in cards", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            md-card(v-bind:class="'md-' + card.theme")
+              md-card-header
+                .md-title {{ card.title }}
+                .md-subhead {{ card.subtitle }}
+              md-card-media-cover(md-solid)
+                md-card-media(md-ratio="16:9")
+                  md-image(v-bind:md-src="'dist/img/' + card.image")
+                md-card-area
+                  md-card-header
+                    .md-title {{ card.title }}
+                    .md-subhead {{ card.subtitle }}
+              md-card-content
+                span {{ card.description }}
+      md-tab(md-label="skills", md-icon="done")
+        md-layout
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p izquierda
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p derecha
 </template>
 
 <script>
@@ -21,30 +38,30 @@
       return {
         cards: [
           {
-            theme: 'accent',
-            title: 'title',
-            subtitle: 'subtitle',
+            theme: 'wyzard',
+            title: 'Wyzard',
+            subtitle: 'https://www.wyzard.es',
             image: 'annyversary.png',
             description: 'description'
           },
           {
-            theme: 'warn',
-            title: 'title',
-            subtitle: 'subtitle',
+            theme: 'expansyon',
+            title: 'Expansyon',
+            subtitle: 'https://www.expansyon.com',
             image: 'annyversary.png',
             description: 'description'
           },
           {
-            theme: 'primary',
-            title: 'title',
-            subtitle: 'subtitle',
+            theme: 'heroyc',
+            title: 'Heroyc',
+            subtitle: 'https://www.heroyc.com',
             image: 'annyversary.png',
             description: 'description'
           },
           {
-            theme: 'accent',
-            title: 'title',
-            subtitle: 'subtitle',
+            theme: 'annyversary',
+            title: 'Annyversary',
+            subtitle: 'Annyversary.apk',
             image: 'annyversary.png',
             description: 'description'
           }
