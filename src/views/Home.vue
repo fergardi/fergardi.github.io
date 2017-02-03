@@ -1,26 +1,31 @@
 <template lang="pug">
   #home
-    h1.md-title.padding About me
-    p.padding hello
-    h1.md-title.padding Projects
-    md-layout
-      md-layout(v-for="card in cards", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-        md-card
-          md-card-header
-            .md-title {{ card.title }}
-            .md-subhead {{ card.subtitle }}
-          md-card-media(md-ratio="16:9")
-            md-image(v-bind:md-src="'dist/img/' + card.image")
-          md-card-content
-            span {{ card.description }}
-            md-list.md-double-line
-              md-list-item(v-for="item in card.items")
-                md-avatar.md-large
-                  md-icon.md-primary {{ item.icon }}
-                .md-list-text-container
-                  span {{ item.title }}
-                  span {{ item.subtitle }}
-                md-divider
+    md-tabs(md-fixed)
+      md-tab(md-label="projects", id="projects")
+        md-layout(md-gutter="16")
+          md-layout(v-for="card in cards", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            md-card
+              md-card-header.center
+                .md-title {{ card.title }}
+                .md-subhead {{ card.subtitle }}
+              md-card-media(md-ratio="16:9")
+                md-image(v-bind:md-src="'dist/img/' + card.image")
+              md-card-content.no-padding
+                span.block.padding {{ card.description | lorem }}
+                md-list.md-double-line
+                  md-divider
+                  md-list-item(v-for="item in card.items")
+                    md-avatar.md-large
+                      md-icon.md-primary {{ item.icon }}
+                    .md-list-text-container
+                      span {{ item.title }}
+                      span {{ item.subtitle }}
+      md-tab(md-label="personal")
+        md-layout
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p izquierda
+          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+            p derecha
 </template>
 
 <script>
@@ -31,22 +36,22 @@
           {
             title: 'Wyzard',
             subtitle: 'https://www.wyzard.es',
-            image: 'wyzard.jpg',
+            image: 'wyzard.png',
             description: 'description',
             items: [
               {
                 icon: 'cloud',
-                title: 'RaspberryPI3',
+                title: 'RaspberryPI',
                 subtitle: 'Own server'
               },
               {
                 icon: 'build',
-                title: 'PHP Symfony2',
+                title: 'PHP Symfony',
                 subtitle: 'Code language'
               },
               {
                 icon: 'view_quilt',
-                title: 'Bootstrap3',
+                title: 'Twitter Bootstrap',
                 subtitle: 'Mobile first responsive'
               },
               {
@@ -61,7 +66,7 @@
               },
               {
                 icon: 'storage',
-                title: 'MySQL5',
+                title: 'MySQL',
                 subtitle: 'Database'
               },
               {
@@ -79,22 +84,22 @@
           {
             title: 'Expansyon',
             subtitle: 'https://www.expansyon.com',
-            image: 'expansyon.jpg',
+            image: 'expansyon.png',
             description: 'description',
             items: [
               {
                 icon: 'cloud',
-                title: 'RaspberryPI3',
+                title: 'RaspberryPI',
                 subtitle: 'Own server'
               },
               {
                 icon: 'build',
-                title: 'PHP Symfony2',
+                title: 'PHP Symfony',
                 subtitle: 'Code language'
               },
               {
                 icon: 'view_quilt',
-                title: 'Bootstrap3',
+                title: 'Twitter Bootstrap',
                 subtitle: 'Mobile first responsive'
               },
               {
@@ -109,7 +114,7 @@
               },
               {
                 icon: 'storage',
-                title: 'MySQL5',
+                title: 'MySQL',
                 subtitle: 'Database'
               },
               {
@@ -127,12 +132,12 @@
           {
             title: 'Heroyc',
             subtitle: 'https://www.heroyc.com',
-            image: 'heroyc.jpg',
+            image: 'heroyc.png',
             description: 'description',
             items: [
               {
                 icon: 'cloud',
-                title: 'RaspberryPI3',
+                title: 'RaspberryPI',
                 subtitle: 'Own server'
               },
               {
@@ -142,7 +147,7 @@
               },
               {
                 icon: 'view_quilt',
-                title: 'Bootstrap3',
+                title: 'Twitter Bootstrap',
                 subtitle: 'Mobile first responsive'
               },
               {
@@ -157,7 +162,7 @@
               },
               {
                 icon: 'storage',
-                title: 'MySQL5',
+                title: 'MySQL',
                 subtitle: 'Database'
               },
               {
@@ -171,6 +176,11 @@
                 subtitle: 'I18n capable'
               },
               {
+                icon: 'place',
+                title: 'Map support',
+                subtitle: 'Leaflet'
+              },
+              {
                 icon: 'shopping_cart',
                 title: 'PayPal',
                 subtitle: 'Microtransactions'
@@ -180,18 +190,23 @@
           {
             title: 'Annyversary',
             subtitle: 'Annyversary.apk',
-            image: 'annyversary.jpg',
+            image: 'annyversary.png',
             description: 'description',
             items: [
               {
                 icon: 'android',
                 title: 'Cordova',
-                subtitle: 'From web to mobile'
+                subtitle: 'From web to mobile APK'
               },
               {
                 icon: 'build',
                 title: 'VueJS',
                 subtitle: 'NodeJS MVVM framework'
+              },
+              {
+                icon: 'autorenew',
+                title: 'SPA',
+                subtitle: 'Single Page Application'
               },
               {
                 icon: 'view_quilt',
@@ -220,4 +235,7 @@
 </script>
 
 <style lang="stylus" scoped>
+  @media only screen and (max-width: 1023px)
+    #projects
+      padding: 0
 </style>

@@ -1,27 +1,25 @@
 <template lang="pug">
   .app
-    md-whiteframe(md-elevation="3", v-once)
-      md-toolbar
-        md-button.md-icon-button.toggler(v-on:click="toggle()")
-          md-icon menu
-        h2.md-title(style="flex: 1") Fergardi
-        router-link.md-icon-button(tag="md-button", to="/help")
-          md-icon help
-        router-link.md-icon-button(tag="md-button", to="/info")
-          md-icon info
+    md-toolbar.md-dense(v-once)
+      md-button.md-icon-button.toggler(v-on:click="toggle()")
+        md-icon menu
+      span.expand
+      h2.md-title Fergardi
+      span.expand
+      md-button.md-icon-button.searcher
+        md-icon search
     md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
-      md-whiteframe(md-elevation="3")
-        md-toolbar.md-account-header
-          md-list.md-transparent
-            md-list-item.md-avatar-list
-              md-avatar.md-large
-                img(src="dist/img/logo.jpg")
-            md-list-item
-              .md-list-text-container
-                span Fergardi
-                span fergardi@gmail.com
-              md-button.md-icon-button.md-list-action(href="mailto:fergardi@gmail.com")
-                md-icon mail
+      md-toolbar.md-account-header
+        md-list.md-transparent
+          md-list-item.md-avatar-list
+            md-avatar.md-large
+              img(src="dist/img/logo.jpg")
+          md-list-item
+            .md-list-text-container
+              span Fergardi
+              span fergardi@gmail.com
+            md-button.md-icon-button.md-list-action(href="mailto:fergardi@gmail.com")
+              md-icon mail
       md-list
         md-list-item(v-on:click="close()")
           router-link(to="/home")
@@ -36,7 +34,7 @@
             md-icon.md-primary info
             span Info
     .main      
-      router-view.content.animated.fadeIn.no-padding
+      router-view.content.animated.fadeIn
 </template>
 
 <script>
@@ -68,27 +66,46 @@
   .app
     display: flex
     flex-flow: column
-    transition: all .4s cubic-bezier(.25,.8,.25,1)
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
   .main
     overflow: auto
     height: 100%
   .content
-    transition: all .4s cubic-bezier(.25,.8,.25,1)
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
   .router-link-active
     background-color: rgba(153, 153, 153, 0.2);
+  .expand
+    flex: 1
   .no-padding
     padding: 0 !important
   .padding
     padding: 16px !important
   .md-card
     width: 100%
-  @media screen and (min-width: 1280px)
+    margin-bottom: 16px
+  .center
+    text-align: center
+  .block
+    display: block
+  .md-sidenav .md-toolbar .md-list-item *
+    color: inherit
+  /* MEDIAS*/
+  // from desktop on show sidebar
+  @media only screen and (min-width: 1280px)
     .app
       padding-left: 304px
       .toggler
-        display: none
+        visibility: hidden
       .md-sidenav-content
         top: 0
         pointer-events: auto
         transform: translate3d(0, 0, 0) !important
+  // tablet landscape
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  // tablet portrait
+  // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  // mobile landscape
+  // @media only screen and (min-device-width: 321px)
+  // mobile portrait
+  // @media only screen and (max-device-width: 320px)
 </style>
