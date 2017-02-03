@@ -1,14 +1,9 @@
 <template lang="pug">
   #info(v-once)
-    p Info
+    p.padding Info
 </template>
 
 <script>
-  export default {
-    created () {
-      this.$material.setCurrentTheme('info')
-    }
-  }
 </script>
 
 <style lang="stylus" scoped>

@@ -25,17 +25,11 @@ var router = new VueRouter({
 // material
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
-  home: {
+  default: {
     primary: {
       color: 'grey',
       hue: 900
     }
-  },
-  help: {
-    primary: 'red'
-  },
-  info: {
-    primary: 'green'
   }
 })
 

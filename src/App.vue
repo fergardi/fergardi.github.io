@@ -12,8 +12,10 @@
       md-toolbar.md-account-header
         md-list.md-transparent
           md-list-item.md-avatar-list
+            span.expand
             md-avatar.md-large
               img(src="dist/img/logo.jpg")
+            span.expand
           md-list-item
             .md-list-text-container
               span Fergardi
@@ -83,6 +85,7 @@
   .md-card
     width: 100%
     margin-bottom: 16px
+    box-shadow: none
   .center
     text-align: center
   .block
