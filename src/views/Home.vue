@@ -1,35 +1,26 @@
 <template lang="pug">
   #home
-    h2.md-heading hola
-    md-tabs(md-fixed)
-      md-tab(md-label="personal", md-icon="done")
-        md-layout
-          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-            p izquierda
-          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-            p derecha
-      md-tab.no-padding(md-label="projects", md-icon="done")
-        md-layout
-          md-layout(v-for="card in cards", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-            md-card(v-bind:class="'md-' + card.theme")
-              md-card-header
-                .md-title {{ card.title }}
-                .md-subhead {{ card.subtitle }}
-              md-card-media-cover(md-solid)
-                md-card-media(md-ratio="16:9")
-                  md-image(v-bind:md-src="'dist/img/' + card.image")
-                md-card-area
-                  md-card-header
-                    .md-title {{ card.title }}
-                    .md-subhead {{ card.subtitle }}
-              md-card-content
-                span {{ card.description }}
-      md-tab(md-label="skills", md-icon="done")
-        md-layout
-          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-            p izquierda
-          md-layout(md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
-            p derecha
+    h1.md-title.padding About me
+    p.padding hello
+    h1.md-title.padding Projects
+    md-layout
+      md-layout(v-for="card in cards", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
+        md-card
+          md-card-header
+            .md-title {{ card.title }}
+            .md-subhead {{ card.subtitle }}
+          md-card-media(md-ratio="16:9")
+            md-image(v-bind:md-src="'dist/img/' + card.image")
+          md-card-content
+            span {{ card.description }}
+            md-list.md-double-line
+              md-list-item(v-for="item in card.items")
+                md-avatar.md-large
+                  md-icon.md-primary {{ item.icon }}
+                .md-list-text-container
+                  span {{ item.title }}
+                  span {{ item.subtitle }}
+                md-divider
 </template>
 
 <script>
@@ -38,32 +29,186 @@
       return {
         cards: [
           {
-            theme: 'wyzard',
             title: 'Wyzard',
             subtitle: 'https://www.wyzard.es',
-            image: 'annyversary.png',
-            description: 'description'
+            image: 'wyzard.jpg',
+            description: 'description',
+            items: [
+              {
+                icon: 'cloud',
+                title: 'RaspberryPI3',
+                subtitle: 'Own server'
+              },
+              {
+                icon: 'build',
+                title: 'PHP Symfony2',
+                subtitle: 'Code language'
+              },
+              {
+                icon: 'view_quilt',
+                title: 'Bootstrap3',
+                subtitle: 'Mobile first responsive'
+              },
+              {
+                icon: 'code',
+                title: 'HTML5',
+                subtitle: 'Template system'
+              },
+              {
+                icon: 'palette',
+                title: 'CSS3',
+                subtitle: 'Web Desing'
+              },
+              {
+                icon: 'storage',
+                title: 'MySQL5',
+                subtitle: 'Database'
+              },
+              {
+                icon: 'https',
+                title: 'HTTPS',
+                subtitle: 'Let\'s Encrypt'
+              },
+              {
+                icon: 'shopping_cart',
+                title: 'PayPal',
+                subtitle: 'Microtransactions'
+              }
+            ]
           },
           {
-            theme: 'expansyon',
             title: 'Expansyon',
             subtitle: 'https://www.expansyon.com',
-            image: 'annyversary.png',
-            description: 'description'
+            image: 'expansyon.jpg',
+            description: 'description',
+            items: [
+              {
+                icon: 'cloud',
+                title: 'RaspberryPI3',
+                subtitle: 'Own server'
+              },
+              {
+                icon: 'build',
+                title: 'PHP Symfony2',
+                subtitle: 'Code language'
+              },
+              {
+                icon: 'view_quilt',
+                title: 'Bootstrap3',
+                subtitle: 'Mobile first responsive'
+              },
+              {
+                icon: 'code',
+                title: 'HTML5',
+                subtitle: 'Template system'
+              },
+              {
+                icon: 'palette',
+                title: 'CSS3',
+                subtitle: 'Web Desing'
+              },
+              {
+                icon: 'storage',
+                title: 'MySQL5',
+                subtitle: 'Database'
+              },
+              {
+                icon: 'https',
+                title: 'HTTPS',
+                subtitle: 'Let\'s Encrypt'
+              },
+              {
+                icon: 'shopping_cart',
+                title: 'PayPal',
+                subtitle: 'Microtransactions'
+              }
+            ]
           },
           {
-            theme: 'heroyc',
             title: 'Heroyc',
             subtitle: 'https://www.heroyc.com',
-            image: 'annyversary.png',
-            description: 'description'
+            image: 'heroyc.jpg',
+            description: 'description',
+            items: [
+              {
+                icon: 'cloud',
+                title: 'RaspberryPI3',
+                subtitle: 'Own server'
+              },
+              {
+                icon: 'build',
+                title: 'NodeJS',
+                subtitle: 'Code language'
+              },
+              {
+                icon: 'view_quilt',
+                title: 'Bootstrap3',
+                subtitle: 'Mobile first responsive'
+              },
+              {
+                icon: 'code',
+                title: 'HTML5',
+                subtitle: 'Template system'
+              },
+              {
+                icon: 'palette',
+                title: 'CSS3',
+                subtitle: 'Web Desing'
+              },
+              {
+                icon: 'storage',
+                title: 'MySQL5',
+                subtitle: 'Database'
+              },
+              {
+                icon: 'https',
+                title: 'HTTPS',
+                subtitle: 'Let\'s Encrypt'
+              },
+              {
+                icon: 'translate',
+                title: 'Translations',
+                subtitle: 'I18n capable'
+              },
+              {
+                icon: 'shopping_cart',
+                title: 'PayPal',
+                subtitle: 'Microtransactions'
+              }
+            ]
           },
           {
-            theme: 'annyversary',
             title: 'Annyversary',
             subtitle: 'Annyversary.apk',
-            image: 'annyversary.png',
-            description: 'description'
+            image: 'annyversary.jpg',
+            description: 'description',
+            items: [
+              {
+                icon: 'android',
+                title: 'Cordova',
+                subtitle: 'From web to mobile'
+              },
+              {
+                icon: 'build',
+                title: 'VueJS',
+                subtitle: 'NodeJS MVVM framework'
+              },
+              {
+                icon: 'view_quilt',
+                title: 'Material Design',
+                subtitle: 'Mobile first responsive'
+              },
+              {
+                icon: 'code',
+                title: 'HTML5',
+                subtitle: 'Template system'
+              },
+              {
+                icon: 'palette',
+                title: 'CSS3',
+                subtitle: 'Web Desing'
+              }
+            ]
           }
         ]
       }

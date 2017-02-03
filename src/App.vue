@@ -36,7 +36,7 @@
             md-icon.md-primary info
             span Info
     .main      
-      router-view.content.animated.fadeIn
+      router-view.content.animated.fadeIn.no-padding
 </template>
 
 <script>
@@ -82,8 +82,6 @@
     padding: 16px !important
   .md-card
     width: 100%
-  .md-heading
-    padding: 16px
   @media screen and (min-width: 1280px)
     .app
       padding-left: 304px
