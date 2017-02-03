@@ -50,7 +50,7 @@
             {
               title: 'Wyzard',
               subtitle: 'https://www.wyzard.es',
-              image: 'wyzard.png',
+              image: 'mockup.jpg',
               description: 'description',
               items: [
                 {
@@ -78,7 +78,7 @@
             {
               title: 'Expansyon',
               subtitle: 'https://www.expansyon.com',
-              image: 'expansyon.png',
+              image: 'mockup.jpg',
               description: 'description',
               items: [
                 {
@@ -106,7 +106,7 @@
             {
               title: 'Heroyc',
               subtitle: 'https://www.heroyc.com',
-              image: 'heroyc.png',
+              image: 'mockup.jpg',
               description: 'description',
               items: [
                 {
@@ -134,7 +134,7 @@
             {
               title: 'Annyversary',
               subtitle: 'Annyversary.apk',
-              image: 'annyversary.png',
+              image: 'mockup.jpg',
               description: 'description',
               items: [
                 {
