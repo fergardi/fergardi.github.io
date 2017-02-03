@@ -35,7 +35,7 @@
           router-link(to="/info")
             md-icon.md-primary info
             span Info
-    .main      
+    .scroll
       router-view.content.animated.fadeIn
 </template>
 
@@ -54,7 +54,7 @@
 
 <style lang="stylus">
   body
-    background: url("dist/img/background.jpg") no-repeat center center fixed
+    // background: url("dist/img/background.jpg") no-repeat center center fixed
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -69,7 +69,7 @@
     display: flex
     flex-flow: column
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
-  .main
+  .scroll
     overflow: auto
     height: 100%
   .content

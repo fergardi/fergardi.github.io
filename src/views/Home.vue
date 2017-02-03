@@ -3,7 +3,7 @@
     md-tabs(md-fixed)
       md-tab.responsive(md-label="Projects")
         md-layout(md-gutter="16")
-          md-layout(v-for="card in cards.projects", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="25", md-flex-large="25", md-flex-xlarge="25")
+          md-layout(v-for="card in cards.projects", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
             md-card
               md-card-header.center
                 .md-title {{ card.title }}
@@ -34,7 +34,7 @@
                   md-divider
                   md-list-item(v-for="item in card.items")
                     md-avatar.md-large
-                      md-icon.md-primary {{ item.icon }}
+                      md-icon.md-accent {{ item.icon }}
                     .md-list-text-container
                       span {{ item.title }}
                       span {{ item.subtitle }}
@@ -55,43 +55,23 @@
               items: [
                 {
                   icon: 'cloud',
-                  title: 'RaspberryPI',
-                  subtitle: 'Homemade server'
+                  title: 'Infrastructure',
+                  subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
                   icon: 'build',
-                  title: 'PHP Symfony',
-                  subtitle: 'Code language'
-                },
-                {
-                  icon: 'view_quilt',
-                  title: 'Twitter Bootstrap',
-                  subtitle: 'Mobile first'
-                },
-                {
-                  icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'Template system'
-                },
-                {
-                  icon: 'palette',
-                  title: 'CSS3',
-                  subtitle: 'Web Desing'
+                  title: 'Language',
+                  subtitle: 'PHP7 + Symfony2'
                 },
                 {
                   icon: 'storage',
-                  title: 'MySQL',
-                  subtitle: 'Database'
+                  title: 'Database',
+                  subtitle: 'MySQL5 + Doctrine2'
                 },
                 {
-                  icon: 'https',
-                  title: 'HTTPS',
-                  subtitle: 'Let\'s Encrypt'
-                },
-                {
-                  icon: 'shopping_cart',
-                  title: 'PayPal',
-                  subtitle: 'Microtransactions'
+                  icon: 'code',
+                  title: 'Design',
+                  subtitle: 'Twitter Bootstrap'
                 }
               ]
             },
@@ -103,43 +83,23 @@
               items: [
                 {
                   icon: 'cloud',
-                  title: 'RaspberryPI',
-                  subtitle: 'Homemade server'
+                  title: 'Infrastructure',
+                  subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
                   icon: 'build',
-                  title: 'PHP Symfony',
-                  subtitle: 'Code language'
-                },
-                {
-                  icon: 'view_quilt',
-                  title: 'Twitter Bootstrap',
-                  subtitle: 'Mobile first'
-                },
-                {
-                  icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'Template system'
-                },
-                {
-                  icon: 'palette',
-                  title: 'CSS3',
-                  subtitle: 'Web Desing'
+                  title: 'Language',
+                  subtitle: 'PHP7 + Symfony2'
                 },
                 {
                   icon: 'storage',
-                  title: 'MySQL',
-                  subtitle: 'Database'
+                  title: 'Database',
+                  subtitle: 'MySQL5 + Doctrine2'
                 },
                 {
-                  icon: 'https',
-                  title: 'HTTPS',
-                  subtitle: 'Let\'s Encrypt'
-                },
-                {
-                  icon: 'shopping_cart',
-                  title: 'PayPal',
-                  subtitle: 'Microtransactions'
+                  icon: 'code',
+                  title: 'Design',
+                  subtitle: 'Twitter Bootstrap'
                 }
               ]
             },
@@ -151,53 +111,23 @@
               items: [
                 {
                   icon: 'cloud',
-                  title: 'RaspberryPI',
-                  subtitle: 'Homemade server'
+                  title: 'Infrastructure',
+                  subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
                   icon: 'build',
-                  title: 'NodeJS',
-                  subtitle: 'Code language'
-                },
-                {
-                  icon: 'view_quilt',
-                  title: 'Twitter Bootstrap',
-                  subtitle: 'Mobile first'
-                },
-                {
-                  icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'Template system'
-                },
-                {
-                  icon: 'palette',
-                  title: 'CSS3',
-                  subtitle: 'Web Desing'
+                  title: 'Language',
+                  subtitle: 'NodeJS + Express'
                 },
                 {
                   icon: 'storage',
-                  title: 'MySQL',
-                  subtitle: 'Database'
+                  title: 'Database',
+                  subtitle: 'MySQL5 + Sequelize'
                 },
                 {
-                  icon: 'https',
-                  title: 'HTTPS',
-                  subtitle: 'Let\'s Encrypt'
-                },
-                {
-                  icon: 'shopping_cart',
-                  title: 'PayPal',
-                  subtitle: 'Microtransactions'
-                },
-                {
-                  icon: 'translate',
-                  title: 'Translations',
-                  subtitle: 'I18n capable'
-                },
-                {
-                  icon: 'place',
-                  title: 'Map support',
-                  subtitle: 'Leaflet'
+                  icon: 'code',
+                  title: 'Design',
+                  subtitle: 'Twitter Bootstrap'
                 }
               ]
             },
@@ -209,38 +139,23 @@
               items: [
                 {
                   icon: 'android',
-                  title: 'Cordova',
-                  subtitle: 'From web to mobile APK'
+                  title: 'Device',
+                  subtitle: 'Cordova android APK'
                 },
                 {
                   icon: 'build',
-                  title: 'VueJS',
-                  subtitle: 'Code language'
-                },
-                {
-                  icon: 'view_quilt',
-                  title: 'Material Design',
-                  subtitle: 'Mobile first'
-                },
-                {
-                  icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'Template system'
-                },
-                {
-                  icon: 'palette',
-                  title: 'CSS3',
-                  subtitle: 'Web Desing'
+                  title: 'Language',
+                  subtitle: 'VueJS framework'
                 },
                 {
                   icon: 'storage',
-                  title: 'LocalStorage',
-                  subtitle: 'Database'
+                  title: 'Database',
+                  subtitle: 'LocalStorage + VueLocalForage'
                 },
                 {
-                  icon: 'autorenew',
-                  title: 'SPA',
-                  subtitle: 'Single Page Application'
+                  icon: 'code',
+                  title: 'Design',
+                  subtitle: 'Material Design + VueMaterial'
                 }
               ]
             }

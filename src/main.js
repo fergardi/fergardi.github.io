@@ -24,13 +24,17 @@ var router = new VueRouter({
 
 // material
 Vue.use(VueMaterial)
-Vue.material.registerTheme({
-  default: {
-    primary: {
-      color: 'grey',
-      hue: 900
-    }
-  }
+Vue.material.registerTheme('default', {
+  primary: {
+    color: 'grey',
+    hue: 900
+  },
+  accent: 'green',
+  warn: {
+    color: 'red',
+    hue: 900
+  },
+  background: 'white'
 })
 
 // filter
