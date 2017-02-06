@@ -25,15 +25,15 @@
       md-list
         md-list-item(v-on:click="close()")
           router-link(to="/home")
-            md-icon.md-primary home
+            md-icon.md-accent home
             span Home
         md-list-item(v-on:click="close()")
           router-link(to="/help")
-            md-icon.md-primary help
+            md-icon.md-accent help
             span Help
         md-list-item(v-on:click="close()")
           router-link(to="/info")
-            md-icon.md-primary info
+            md-icon.md-accent info
             span Info
     .scroll
       router-view.content.animated.fadeIn
