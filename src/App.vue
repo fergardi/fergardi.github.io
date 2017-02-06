@@ -55,9 +55,6 @@
 <style lang="stylus">
   body
     // background: url("dist/img/background.jpg") no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
     background-size: cover
     box-sizing: border-box
   html
@@ -90,6 +87,9 @@
     text-align: center
   .block
     display: block
+  .flex
+    display: flex
+    flex: 1
   .md-sidenav .md-toolbar .md-list-item *
     color: inherit
   /* MEDIAS*/
