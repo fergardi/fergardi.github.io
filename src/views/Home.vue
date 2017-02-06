@@ -55,7 +55,7 @@
             {
               title: 'Wyzard',
               subtitle: 'Medieval fantasy turn based game',
-              image: 'wyzard.png',
+              image: 'wyzard.jpg',
               code: 'https://github.com/fergardi/archmage',
               link: 'https://www.wyzard.es',
               description: 'My first online game. In a fantasy/medieval massive competitive world, you gain a "turn" every X minutes, and you may spend your turns in different ways: exploring/conquering new lands to build in, researching/conjuring new spells/summons to power up your magical army, activating powerful legendary artifacts in yourself/enemy realms, buying/selling/trading items/troops in the store to earn tons of gold, and inn the end, defeating the 5 powerful Demigods and last standing the top1 to win and became the best Wyzard of the world. Choose between 5 different colors and ways to play.',
@@ -90,7 +90,7 @@
             {
               title: 'Expansyon',
               subtitle: 'Futuristic sci fi space conquer game',
-              image: 'expansyon.png',
+              image: 'expansyon.jpg',
               code: 'https://github.com/fergardi/armada',
               link: 'https://www.expansyon.com',
               description: 'My second online game. This time, you own a prosper but little space empire. As before, gain a "turn" every X minutes and spend it leveling up, researching new technologies, constructing new buildings, exploring and conquering new planets to increase your resource incomes, and attacking other players to lower their power. Join one of the several factions available, vote the federal laws that will rule your daily gameplay differently using your influence, and accept new quests from the cantina for glory and rewards. Again, after defeating the invincible Empyre, you need to last stand at top1 to win and became the new Empyre.',
@@ -125,7 +125,7 @@
             {
               title: 'Heroyc',
               subtitle: 'Medieval rpg exploration game',
-              image: 'heroyc.png',
+              image: 'heroyc.jpg',
               code: 'https://github.com/fergardi/heroyc',
               link: 'https://www.heroyc.com',
               description: 'My third online game. Now, there is an actual world out there. In that world, buildings spawn/vanish constantly, offering challenges to the player like defeating enemies, leveling up, looting items, crafting recipes, learning spells, etc. The trick here is that you actually need to go to the spot to activate it, making it fun for people who likes to walk or bike. No winners this time, just play and level up, and try to be the top1 as long as you can.',
@@ -160,7 +160,7 @@
             {
               title: 'Annyversary',
               subtitle: 'Guess the password gymkana game',
-              image: 'annyversary.png',
+              image: 'annyversary.jpg',
               code: 'https://github.com/fergardi/VueMaterial',
               link: null,
               description: 'My fourth game. This time is offline, served as an Android APK with Cordova, for celebrating my girlfriend\'s and I first anniversary. I challenged her with like 50 freaky riddles in comics/books/movies/shows/games, using images/memes/maps/video/gifs and textual clues/tags, expecting her to break the password in order to solve the riddle and move forward to the next one, with in the end being an actual gift hidden in a secret place.',
@@ -195,7 +195,7 @@
             {
               title: 'Portfolio',
               subtitle: 'Personal CV portolio',
-              image: 'portfolio.png',
+              image: 'portfolio.jpg',
               code: 'https://github.com/fergardi/fergardi.github.io',
               link: 'https://fergardi.github.io',
               description: 'My personal portfolio, hosted in github pages. Minimalistic, plain and simple, WYSISYG fully responsive SPA for demostration purposes. Mobile first, desktop friendly.',
