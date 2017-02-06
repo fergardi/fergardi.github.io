@@ -9,16 +9,20 @@
                 .md-title {{ card.title }}
                 .md-subhead {{ card.subtitle }}
               md-card-media(md-ratio="16:9")
-                md-image(v-bind:md-src="'dist/img/' + card.image")
+                md-image.zoom(v-bind:md-src="'dist/img/' + card.image")
+                md-ink-ripple
+                md-button.md-fab.md-fab-bottom-left(v-bind:href="card.code")
+                  md-icon code
+                md-button.md-fab.md-fab-bottom-right(v-bind:href="card.link")
+                  md-icon play_arrow
               md-card-content.no-padding
                 span.block.padding {{ card.description | lorem }}
-                md-list.md-double-line
+                md-list.md-double-line.md-dense
                   md-divider
                   md-list-item(v-for="item in card.items")
-                    md-avatar.md-large
-                      md-icon.md-primary {{ item.icon }}
+                    md-icon.md-size-2x.md-accent {{ item.icon }}
                     .md-list-text-container
-                      span {{ item.title }}
+                      strong {{ item.title }}
                       span {{ item.subtitle }}
                     md-divider
       md-tab.responsive(md-label="Personal")
@@ -28,16 +32,17 @@
               md-card-header.center
                 .md-title {{ card.title }}
                 .md-subhead {{ card.subtitle }}
+              md-divider
               md-card-content.no-padding
                 span.block.padding {{ card.description | lorem }}
-                md-list.md-double-line
+                md-list.md-triple-line.md-dense
                   md-divider
                   md-list-item(v-for="item in card.items")
-                    md-avatar.md-large
-                      md-icon.md-accent {{ item.icon }}
+                    md-icon.md-size-2x.md-accent {{ item.icon }}
                     .md-list-text-container
-                      span {{ item.title }}
+                      strong {{ item.title }}
                       span {{ item.subtitle }}
+                      i {{ item.date }}
                     md-divider
 </template>
 
@@ -49,18 +54,20 @@
           projects: [
             {
               title: 'Wyzard',
-              subtitle: 'https://www.wyzard.es',
+              subtitle: 'Medieval fantasy turn based game',
               image: 'mockup.jpg',
+              code: '#',
+              link: '#',
               description: 'description',
               items: [
                 {
-                  icon: 'cloud',
+                  icon: 'settings',
                   title: 'Infrastructure',
                   subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
-                  icon: 'build',
-                  title: 'Language',
+                  icon: 'code',
+                  title: 'Code',
                   subtitle: 'PHP7 + Symfony2'
                 },
                 {
@@ -69,26 +76,33 @@
                   subtitle: 'MySQL5 + Doctrine2'
                 },
                 {
-                  icon: 'code',
+                  icon: 'view_compact',
                   title: 'Design',
                   subtitle: 'Twitter Bootstrap'
+                },
+                {
+                  icon: 'burst_mode',
+                  title: 'Assets',
+                  subtitle: 'Game Icons'
                 }
               ]
             },
             {
               title: 'Expansyon',
-              subtitle: 'https://www.expansyon.com',
+              subtitle: 'Futuristic sci fi space conquer game',
               image: 'mockup.jpg',
+              code: '#',
+              link: '#',
               description: 'description',
               items: [
                 {
-                  icon: 'cloud',
+                  icon: 'settings',
                   title: 'Infrastructure',
                   subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
-                  icon: 'build',
-                  title: 'Language',
+                  icon: 'code',
+                  title: 'Code',
                   subtitle: 'PHP7 + Symfony2'
                 },
                 {
@@ -97,26 +111,33 @@
                   subtitle: 'MySQL5 + Doctrine2'
                 },
                 {
-                  icon: 'code',
+                  icon: 'view_compact',
                   title: 'Design',
                   subtitle: 'Twitter Bootstrap'
+                },
+                {
+                  icon: 'burst_mode',
+                  title: 'Assets',
+                  subtitle: 'Game Icons'
                 }
               ]
             },
             {
               title: 'Heroyc',
-              subtitle: 'https://www.heroyc.com',
+              subtitle: 'Medieval rpg exploration game',
               image: 'mockup.jpg',
+              code: '#',
+              link: '#',
               description: 'description',
               items: [
                 {
-                  icon: 'cloud',
+                  icon: 'settings',
                   title: 'Infrastructure',
                   subtitle: 'RaspberryPI3 + Apache2'
                 },
                 {
-                  icon: 'build',
-                  title: 'Language',
+                  icon: 'code',
+                  title: 'Code',
                   subtitle: 'NodeJS + Express'
                 },
                 {
@@ -125,27 +146,34 @@
                   subtitle: 'MySQL5 + Sequelize'
                 },
                 {
-                  icon: 'code',
+                  icon: 'view_compact',
                   title: 'Design',
                   subtitle: 'Twitter Bootstrap'
+                },
+                {
+                  icon: 'burst_mode',
+                  title: 'Assets',
+                  subtitle: 'Rpg Sprites'
                 }
               ]
             },
             {
               title: 'Annyversary',
-              subtitle: 'Annyversary.apk',
+              subtitle: 'Guess the password gymkana game',
               image: 'mockup.jpg',
+              code: '#',
+              link: '#',
               description: 'description',
               items: [
                 {
                   icon: 'android',
                   title: 'Device',
-                  subtitle: 'Cordova android APK'
+                  subtitle: 'Apache Cordova APK'
                 },
                 {
-                  icon: 'build',
-                  title: 'Language',
-                  subtitle: 'VueJS framework'
+                  icon: 'code',
+                  title: 'Code',
+                  subtitle: 'VueJS'
                 },
                 {
                   icon: 'storage',
@@ -153,9 +181,14 @@
                   subtitle: 'LocalStorage + VueLocalForage'
                 },
                 {
-                  icon: 'code',
+                  icon: 'view_compact',
                   title: 'Design',
                   subtitle: 'Material Design + VueMaterial'
+                },
+                {
+                  icon: 'burst_mode',
+                  title: 'Assets',
+                  subtitle: 'Google Images'
                 }
               ]
             }
@@ -167,48 +200,84 @@
               description: 'description',
               items: [
                 {
-                  icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  icon: 'school',
+                  title: 'Intelligent Systems',
+                  subtitle: 'University of Salamanca, Spain',
+                  date: '2011-2012'
                 },
                 {
-                  icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  icon: 'school',
+                  title: 'Computer Engineering',
+                  subtitle: 'University of León, Spain',
+                  date: '2006-2011'
+                },
+                {
+                  icon: 'school',
+                  title: 'Vocational Training in Programming',
+                  subtitle: 'Helping Mary, León, Spain',
+                  date: '2004-2006'
                 }
               ]
             },
             {
               title: 'Skills',
-              subtitle: 'Achievement unlocked!',
+              subtitle: 'Achievement unlocked',
               description: 'description',
               items: [
                 {
                   icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  title: 'Organized',
+                  subtitle: 'Digitally speaking only',
+                  date: 'Diogenes syndrom mode off'
+                },
+                {
+                  icon: 'done',
+                  title: 'Social',
+                  subtitle: 'Chat and laugh is important',
+                  date: 'Seriously, I need coffee'
+                },
+                {
+                  icon: 'done',
+                  title: 'Learner',
+                  subtitle: 'Love new technologies',
+                  date: 'Easily bored'
                 }
               ]
             },
             {
               title: 'Jobs',
-              subtitle: 'Eating purposes only',
+              subtitle: 'Pays the bills',
               description: 'description',
               items: [
                 {
-                  icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  icon: 'attach_money',
+                  title: 'Senior Developer',
+                  subtitle: 'Xeridia SL, León, Spain',
+                  date: '2016+'
                 },
                 {
-                  icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  icon: 'attach_money',
+                  title: 'Junior Developer',
+                  subtitle: 'University of León, Spain',
+                  date: '2012-2015'
                 },
                 {
-                  icon: 'done',
-                  title: 'Title',
-                  subtitle: 'Subtitle'
+                  icon: 'attach_money',
+                  title: 'IT service',
+                  subtitle: 'Diary of León, Spain',
+                  date: '2010-2011'
+                },
+                {
+                  icon: 'attach_money',
+                  title: 'Junior Developer',
+                  subtitle: 'University of León, Spain',
+                  date: '2009-2010'
+                },
+                {
+                  icon: 'attach_money',
+                  title: 'Junior Developer',
+                  subtitle: 'LegioNet SL, León, Spain',
+                  date: '2005-2006'
                 }
               ]
             }
@@ -220,6 +289,11 @@
 </script>
 
 <style lang="stylus" scoped>
+  .zoom
+    transition: all .2s ease-in-out;
+  .zoom:hover
+    transform: translateY(-50%) scale(1.1) !important
+    opacity: 0.9
   @media only screen and (max-width: 1023px)
     .responsive
       padding: 0
