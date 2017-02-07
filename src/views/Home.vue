@@ -198,7 +198,7 @@
               image: 'portfolio.jpg',
               code: 'https://github.com/fergardi/fergardi.github.io',
               link: 'https://fergardi.github.io',
-              description: 'My personal portfolio, hosted in github pages. Minimalistic, plain and simple, WYSISYG fully responsive SPA for demostration purposes. Mobile first, desktop friendly.',
+              description: 'My personal portfolio, hosted in github pages. Minimalistic, plain and simple, WYSIWYG, fully responsive SPA for demostration purposes. Mobile first, desktop friendly. Designed all by myself, pretty cool, huh?',
               items: [
                 {
                   icon: 'settings',
@@ -257,7 +257,7 @@
             {
               title: 'Skills',
               subtitle: 'Achievement unlocked',
-              description: 'I allways liked computers, and more specifically, games. Wanted to be a game developer but ended being a web developer, close but not enought. So I started developing web browser games. Nowadays with the actual Android/iOS Apache Cordova support, I started to port those games to mobile apps who connects my websites in different platforms around the world. Since the discover of NodeJS, switched my old monolithic PHP developing skills and never looked back. Next steps? Desktop apps using Electron.',
+              description: 'I allways liked computers, and more specifically, games. Wanted to be a game developer but ended being a web developer, close but not enought. So I started developing web browser games. Nowadays with the actual Android/iOS Apache Cordova support, I started to port those games to mobile apps which connects my website games to different platforms around the net. Since the discovery of NodeJS, switched from my old monolithic PHP developing skills and never looked back. Next steps? Desktop apps using Electron.',
               items: [
                 {
                   icon: 'done',
