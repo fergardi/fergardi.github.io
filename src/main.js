@@ -3,9 +3,8 @@ import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 
 import App from './App.vue'
-import Home from './views/Home.vue'
-import Info from './views/Info.vue'
-import Help from './views/Help.vue'
+import Portfolio from './views/Portfolio.vue'
+import Contact from './views/Contact.vue'
 
 // router
 Vue.use(VueRouter)
@@ -13,10 +12,9 @@ Vue.use(VueRouter)
 // routes
 var router = new VueRouter({
   routes: [
-    { path: '/', redirect: '/home' },
-    { path: '/home', component: Home },
-    { path: '/help', component: Help },
-    { path: '/info', component: Info },
+    { path: '/', redirect: '/portfolio' },
+    { path: '/portfolio', component: Portfolio },
+    { path: '/contact', component: Contact },
     { path: '*', redirect: '/' }
   ]
 })

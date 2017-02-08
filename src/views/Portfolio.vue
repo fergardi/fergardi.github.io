@@ -1,5 +1,5 @@
 <template lang="pug">
-  #home(v-once)
+  #portfolio
     md-tabs(md-fixed)
       md-tab.responsive(md-label="Projects")
         md-layout(md-gutter="16")
@@ -43,6 +43,24 @@
                       strong {{ item.title }}
                       span {{ item.subtitle }}
                       i {{ item.date }}
+                    md-divider
+      md-tab.responsive(md-label="Experience")
+        md-layout(md-gutter="16")
+          md-layout(v-for="card in cards.experience", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="100", md-flex-large="100", md-flex-xlarge="100")
+            md-card
+              md-card-header.center
+                .md-title {{ card.title }}
+                .md-subhead {{ card.subtitle }}
+              md-divider
+              md-card-content.no-padding
+                span.block.padding {{ card.description }}
+                md-list.md-double-line.md-dense
+                  md-divider
+                  md-list-item(v-for="item in card.items")
+                    md-icon.md-size-2x.md-accent {{ item.icon }}
+                    .md-list-text-container
+                      strong {{ item.title }}
+                      span {{ item.subtitle }}
                     md-divider
 </template>
 
@@ -313,6 +331,50 @@
                   title: 'Junior Developer',
                   subtitle: 'LegioNet SL, León, Spain',
                   date: '2005-2006'
+                }
+              ]
+            }
+          ],
+          experience: [
+            {
+              title: 'Experience',
+              subtitle: 'Martial arts',
+              description: 'This is a small compendium of my best programming skills.',
+              items: [
+                {
+                  icon: 'code',
+                  title: 'HTML5',
+                  subtitle: 'JADE, PUG'
+                },
+                {
+                  icon: 'code',
+                  title: 'CSS3',
+                  subtitle: 'LESS, SASS, SCSS, STYLUS'
+                },
+                {
+                  icon: 'code',
+                  title: 'JAVASCRIPT',
+                  subtitle: 'jQuery, ES6'
+                },
+                {
+                  icon: 'code',
+                  title: 'SQL',
+                  subtitle: 'MySQL, MariaDB, MongoDB, MSSQLServer'
+                },
+                {
+                  icon: 'code',
+                  title: 'ORM',
+                  subtitle: 'EntityFramework, Doctrine, Sequelize'
+                },
+                {
+                  icon: 'code',
+                  title: 'PHP',
+                  subtitle: 'Symfony2'
+                },
+                {
+                  icon: 'code',
+                  title: 'C#',
+                  subtitle: 'DotNet'
                 }
               ]
             }

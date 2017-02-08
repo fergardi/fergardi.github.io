@@ -1,6 +1,6 @@
 <template lang="pug">
   .app
-    md-toolbar.md-dense(v-once)
+    md-toolbar.md-dense
       md-button.md-icon-button.toggler(v-on:click.native="toggle()")
         md-icon menu
       span.expand
@@ -8,7 +8,7 @@
       span.expand
       md-button.md-icon-button.searcher
         md-icon search
-    md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
+    md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
           md-list-item.md-avatar-list
@@ -24,17 +24,13 @@
               md-icon mail
       md-list
         md-list-item
-          router-link(exact, to="/home")
-            md-icon.md-accent home
-            span Home
+          router-link(exact, to="/portfolio")
+            md-icon.md-accent devices
+            span Portfolio
         md-list-item
-          router-link(exact, to="/help")
-            md-icon.md-accent help
-            span Help
-        md-list-item
-          router-link(exact, to="/info")
-            md-icon.md-accent info
-            span Info
+          router-link(exact, to="/contact")
+            md-icon.md-accent send
+            span Contact
     .scroll
       router-view.content.animated.fadeIn
 </template>
@@ -92,6 +88,8 @@
     flex: 1
   .md-sidenav .md-toolbar .md-list-item *
     color: inherit
+  .searcher
+    visibility: hidden
   /* MEDIAS*/
   // from desktop on show sidebar
   @media only screen and (min-width: 1280px)

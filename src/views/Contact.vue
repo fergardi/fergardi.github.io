@@ -1,6 +1,6 @@
 <template lang="pug">
-  #help(v-once)
-    p.padding Help
+  #contact
+    md-input Contact
 </template>
 
 <script>
