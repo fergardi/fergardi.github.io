@@ -1,7 +1,7 @@
 <template lang="pug">
   .app
     md-toolbar.md-dense(v-once)
-      md-button.md-icon-button.toggler(v-on:click="toggle()")
+      md-button.md-icon-button.toggler(v-on:click.native="toggle()")
         md-icon menu
       span.expand
       h2.md-title Fergardi
@@ -23,16 +23,16 @@
             md-button.md-icon-button.md-list-action(href="mailto:fergardi@gmail.com")
               md-icon mail
       md-list
-        md-list-item(v-on:click="close()")
-          router-link(to="/home")
+        md-list-item
+          router-link(exact, to="/home")
             md-icon.md-accent home
             span Home
-        md-list-item(v-on:click="close()")
-          router-link(to="/help")
+        md-list-item
+          router-link(exact, to="/help")
             md-icon.md-accent help
             span Help
-        md-list-item(v-on:click="close()")
-          router-link(to="/info")
+        md-list-item
+          router-link(exact, to="/info")
             md-icon.md-accent info
             span Info
     .scroll

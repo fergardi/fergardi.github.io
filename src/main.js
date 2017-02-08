@@ -2,8 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 
-import moment from 'moment'
-
 import App from './App.vue'
 import Home from './views/Home.vue'
 import Info from './views/Info.vue'
@@ -11,6 +9,7 @@ import Help from './views/Help.vue'
 
 // router
 Vue.use(VueRouter)
+
 // routes
 var router = new VueRouter({
   routes: [
@@ -37,18 +36,21 @@ Vue.material.registerTheme('default', {
   background: 'white'
 })
 
-// filter
-Vue.filter('date', (timestamp) => {
-  return moment(parseInt(timestamp)).format('D/M/YYYY HH:mm:ss')
-})
-Vue.filter('lorem', (string) => {
-  const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  return lorem.substring(0, Math.floor(Math.random() * lorem.length) + (lorem.length / 2)) + '...'
+// scroll to top and close sidebar
+router.beforeEach((to, from, next) => {
+  Vue.nextTick(() => {
+    const content = document.querySelector('.scroll')
+    if (content) {
+      content.scrollTop = 0
+    }
+    Main.close()
+    next()
+  })
 })
 
-/* eslint-disable no-new */
-new Vue({
+// main app
+let Main = Vue.component('app', App)
+Main = new Main({
   el: '#app',
-  render: h => h(App),
   router
 })

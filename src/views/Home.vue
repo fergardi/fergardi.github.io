@@ -9,7 +9,7 @@
                 .md-title {{ card.title }}
                 .md-subhead {{ card.subtitle }}
               md-card-media(md-ratio="16:9")
-                md-image.zoom(v-bind:md-src="'dist/img/' + card.image")
+                img.zoom(v-bind:src="'dist/img/' + card.image")
                 md-ink-ripple
                 md-button.md-fab.md-fab-bottom-left(v-bind:href="card.code", v-if="card.code")
                   md-icon code
