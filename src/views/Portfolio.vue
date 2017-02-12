@@ -27,14 +27,14 @@
                     md-divider
       md-tab.responsive(md-label="Personal")
         md-layout(md-gutter="16")
-          md-layout(v-for="card in cards.personal", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="33", md-flex-large="33", md-flex-xlarge="33")
+          md-layout(v-for="card in cards.personal", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="50", md-flex-large="50", md-flex-xlarge="50")
             md-card
               md-card-header.center
                 .md-title {{ card.title }}
                 .md-subhead {{ card.subtitle }}
               md-divider
               md-card-content.no-padding
-                span.block.padding {{ card.description }}
+                span.flex.padding {{ card.description }}
                 md-list.md-triple-line.md-dense
                   md-divider
                   md-list-item(v-for="item in card.items")
@@ -43,24 +43,6 @@
                       strong {{ item.title }}
                       span {{ item.subtitle }}
                       i {{ item.date }}
-                    md-divider
-      md-tab.responsive(md-label="Experience")
-        md-layout(md-gutter="16")
-          md-layout(v-for="card in cards.experience", md-flex-xsmall="100", md-flex-small="100", md-flex-medium="100", md-flex-large="100", md-flex-xlarge="100")
-            md-card
-              md-card-header.center
-                .md-title {{ card.title }}
-                .md-subhead {{ card.subtitle }}
-              md-divider
-              md-card-content.no-padding
-                span.block.padding {{ card.description }}
-                md-list.md-double-line.md-dense
-                  md-divider
-                  md-list-item(v-for="item in card.items")
-                    md-icon.md-size-2x.md-accent {{ item.icon }}
-                    .md-list-text-container
-                      strong {{ item.title }}
-                      span {{ item.subtitle }}
                     md-divider
 </template>
 
@@ -333,9 +315,7 @@
                   date: '2005-2006'
                 }
               ]
-            }
-          ],
-          experience: [
+            },
             {
               title: 'Experience',
               subtitle: 'Martial arts',
@@ -391,7 +371,4 @@
   .zoom:hover
     transform: translateY(-50%) scale(1.1) !important
     opacity: 0.9
-  @media only screen and (max-width: 1023px)
-    .responsive
-      padding: 0
 </style>

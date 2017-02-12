@@ -31,6 +31,7 @@
           router-link(exact, to="/contact")
             md-icon.md-accent send
             span Contact
+        small.center &copy;Fergardi2017
     .scroll
       router-view.content.animated.fadeIn
 </template>
@@ -81,8 +82,6 @@
     box-shadow: none
   .center
     text-align: center
-  .block
-    display: block
   .flex
     display: flex
     flex: 1
@@ -101,6 +100,9 @@
         top: 0
         pointer-events: auto
         transform: translate3d(0, 0, 0) !important
+  @media only screen and (max-width: 1023px)
+    .responsive
+      padding: 0
   // tablet landscape
   // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   // tablet portrait
