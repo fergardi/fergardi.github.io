@@ -82,6 +82,7 @@
     box-shadow: none
   .center
     text-align: center
+    justify-content: center
   .flex
     display: flex
     flex: 1

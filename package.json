@@ -16,6 +16,7 @@
     "vue": "^2.0.1",
     "vue-loader": "^10.0.2",
     "vue-material": "*",
+    "vue-recaptcha": "^0.3.2",
     "vue-router": "^2.1.1",
     "vue-touch": "^1.1.0"
   },
