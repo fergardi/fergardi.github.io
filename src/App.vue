@@ -31,7 +31,7 @@
           router-link(exact, to="/contact")
             md-icon.md-accent send
             span Contact
-        small.center &copy;Fergardi2017
+      small.signature.flex.center &copy;Fergardi2017
     .scroll
       router-view.content.animated.fadeIn
 </template>
@@ -52,58 +52,63 @@
 <style lang="stylus">
   body
     // background: url("dist/img/background.jpg") no-repeat center center fixed
-    background-size: cover
-    box-sizing: border-box
+    background-size cover
+    box-sizing border-box
   html
   body
   .app
-    height: 100%
-    overflow: hidden
+    height 100%
+    overflow hidden
   .app
-    display: flex
-    flex-flow: column
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
+    display flex
+    flex-flow column
+    transition all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
   .scroll
-    overflow: auto
-    height: 100%
+    overflow auto
+    height 100%
   .content
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
+    transition all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
   .router-link-active
-    background-color: rgba(153, 153, 153, 0.2);
+    background-color rgba(153, 153, 153, 0.2);
   .expand
-    flex: 1
+    flex 1
   .no-padding
-    padding: 0 !important
+    padding 0 !important
   .padding
-    padding: 16px !important
+    padding 16px !important
   .md-card
-    width: 100%
-    margin-bottom: 16px
-    box-shadow: none
+    width 100%
+    margin-bottom 16px
+    box-shadow none
   .center
-    text-align: center
-    justify-content: center
+    text-align center
+    justify-content center
+  .signature
+    width 100%
+    bottom 0
+    position absolute
+    margin-bottom 1em
   .flex
-    display: flex
-    flex: 1
+    display flex
+    flex 1
   .md-sidenav .md-toolbar .md-list-item *
-    color: inherit
+    color inherit
   .searcher
-    visibility: hidden
+    visibility hidden
   /* MEDIAS*/
   // from desktop on show sidebar
-  @media only screen and (min-width: 1280px)
+  @media only screen and (min-width 1280px)
     .app
-      padding-left: 304px
+      padding-left 304px
       .toggler
-        visibility: hidden
+        visibility hidden
       .md-sidenav-content
-        top: 0
-        pointer-events: auto
-        transform: translate3d(0, 0, 0) !important
-  @media only screen and (max-width: 1023px)
+        top 0
+        pointer-events auto
+        transform translate3d(0, 0, 0) !important
+  @media only screen and (max-width 1023px)
     .responsive
-      padding: 0
+      padding 0
   // tablet landscape
   // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   // tablet portrait

@@ -9,7 +9,7 @@
         .md-title Contact
         .md-subhead Get in touch
       md-card-content
-        form(v-on:submit.prevent="send()")
+        form#form(v-on:submit.prevent="send()")
           md-input-container
             md-icon.md-primary mail
             label Email
@@ -56,6 +56,8 @@
             responseType: 'json'
           })
           .then(() => {
+            document.getElementById('form').reset()
+            this.$refs.recaptcha.reset()
             this.alert = 'Your email has been sent correctly! I\'ll answer ASAP.'
             this.open()
           })
