@@ -108,7 +108,7 @@
         transform translate3d(0, 0, 0) !important
   @media only screen and (max-width 1023px)
     .responsive
-      padding 0
+      padding 0 !important
   // tablet landscape
   // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   // tablet portrait
