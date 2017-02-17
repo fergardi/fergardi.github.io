@@ -40,7 +40,7 @@
         message: '',
         alert: '',
         captcha: false,
-        key: '6LdmXxUUAAAAAE4DoEtzvTSqo3FIyQrutsWLYoJm'
+        key: '6Ld__RUUAAAAAOPJ6UjH6mx5kwmfZUxsN4W7Z0Q1'
       }
     },
     methods: {

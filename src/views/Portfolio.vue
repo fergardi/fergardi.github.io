@@ -157,6 +157,7 @@
                 }
               ]
             },
+            /*
             {
               title: 'Annyversary',
               subtitle: 'Guess the password gymkana game',
@@ -191,7 +192,7 @@
                   subtitle: 'Google Images'
                 }
               ]
-            },
+            }*/
             {
               title: 'Portfolio',
               subtitle: 'Personal CV portolio',
