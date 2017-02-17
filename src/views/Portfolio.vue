@@ -56,7 +56,7 @@
               title: 'Wyzard',
               subtitle: 'Medieval fantasy turn based game',
               image: 'wyzard.jpg',
-              code: 'https://github.com/fergardi/archmage',
+              code: 'https://github.com/fergardi/wyzard',
               link: 'https://www.wyzard.es',
               description: 'My first online game. In a fantasy/medieval massive competitive world, you gain a "turn" every X minutes, and you may spend your turns in different ways: exploring/conquering new lands to build in, researching/conjuring new spells/summons to power up your magical army, activating powerful legendary artifacts in yourself/enemy realms, buying/selling/trading items/troops in the store to earn tons of gold, and inn the end, defeating the 5 powerful Demigods and last standing the top1 to win and became the best Wyzard of the world. Choose between 5 different colors and ways to play.',
               items: [
@@ -91,7 +91,7 @@
               title: 'Expansyon',
               subtitle: 'Futuristic sci fi space conquer game',
               image: 'expansyon.jpg',
-              code: 'https://github.com/fergardi/armada',
+              code: 'https://github.com/fergardi/expansyon',
               link: 'https://www.expansyon.com',
               description: 'My second online game. This time, you own a prosper but little space empire. As before, gain a "turn" every X minutes and spend it leveling up, researching new technologies, constructing new buildings, exploring and conquering new planets to increase your resource incomes, and attacking other players to lower their power. Join one of the several factions available, vote the federal laws that will rule your daily gameplay differently using your influence, and accept new quests from the cantina for glory and rewards. Again, after defeating the invincible Empyre, you need to last stand at top1 to win and became the new Empyre.',
               items: [
@@ -161,7 +161,7 @@
               title: 'Annyversary',
               subtitle: 'Guess the password gymkana game',
               image: 'annyversary.jpg',
-              code: 'https://github.com/fergardi/VueMaterial',
+              code: 'https://github.com/fergardi/annyversary',
               link: null,
               description: 'My fourth game. This time is offline, served as an Android APK with Cordova, for celebrating my girlfriend\'s and I first anniversary. I challenged her with like 50 freaky riddles in comics/books/movies/shows/games, using images/memes/maps/video/gifs and textual clues/tags, expecting her to break the password in order to solve the riddle and move forward to the next one, with in the end being an actual gift hidden in a secret place.',
               items: [
@@ -223,7 +223,7 @@
                 {
                   icon: 'burst_mode',
                   title: 'Assets',
-                  subtitle: 'My own projects\' screenshots'
+                  subtitle: 'Mockuper + Screenshots'
                 }
               ]
             }
@@ -282,7 +282,7 @@
             {
               title: 'Jobs',
               subtitle: 'Pays the bills',
-              description: 'I\'ve worked in so many places right now, allways in a developer kind of job. Sometimes boring, with simple user database maintenance, list & details rendering, or content management system administration. But other times inspiring, with real time map positioning, 3d sand projections, or critical fire response systems.',
+              description: 'I\'ve worked in so many places right now, allways in a developer kind of job. Sometimes boring, with simple user database maintenance, list & details rendering, or Content Management System administration. But other times inspiring, with real time map positioning, 3d sand projections, or critical fire response systems.',
               items: [
                 {
                   icon: 'attach_money',
@@ -323,23 +323,13 @@
               items: [
                 {
                   icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'JADE, PUG'
+                  title: 'PHP',
+                  subtitle: 'Frameworks: Symfony2'
                 },
                 {
                   icon: 'code',
-                  title: 'CSS3',
-                  subtitle: 'LESS, SASS, SCSS, STYLUS'
-                },
-                {
-                  icon: 'code',
-                  title: 'JAVASCRIPT',
-                  subtitle: 'jQuery, ES6'
-                },
-                {
-                  icon: 'code',
-                  title: 'SQL',
-                  subtitle: 'MySQL, MariaDB, MongoDB, MSSQLServer'
+                  title: 'C#',
+                  subtitle: 'DotNet'
                 },
                 {
                   icon: 'code',
@@ -348,13 +338,23 @@
                 },
                 {
                   icon: 'code',
-                  title: 'PHP',
-                  subtitle: 'Symfony2'
+                  title: 'SQL',
+                  subtitle: 'Engines: MySQL, MariaDB, MongoDB, MSSQLServer'
                 },
                 {
                   icon: 'code',
-                  title: 'C#',
-                  subtitle: 'DotNet'
+                  title: 'HTML5',
+                  subtitle: 'Preprocessors: JADE, PUG'
+                },
+                {
+                  icon: 'code',
+                  title: 'CSS3',
+                  subtitle: 'Preprocessors: LESS, SASS, SCSS, STYLUS; Frameworks: Twitter Bootstrap, Vue Material, flexboxgrid'
+                },
+                {
+                  icon: 'code',
+                  title: 'JAVASCRIPT',
+                  subtitle: 'Frameworks: jQuery, VueJS'
                 }
               ]
             }
