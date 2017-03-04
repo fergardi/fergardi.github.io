@@ -157,7 +157,6 @@
                 }
               ]
             },
-            /*
             {
               title: 'Annyversary',
               subtitle: 'Guess the password gymkana game',
@@ -192,7 +191,7 @@
                   subtitle: 'Google Images'
                 }
               ]
-            }*/
+            },
             {
               title: 'Portfolio',
               subtitle: 'Personal CV portolio',
@@ -225,6 +224,41 @@
                   icon: 'burst_mode',
                   title: 'Assets',
                   subtitle: 'Mockuper + Screenshots'
+                }
+              ]
+            },
+            {
+              title: 'Nucleus',
+              subtitle: 'Custom scaffolding project',
+              image: 'nucleus.jpg',
+              code: 'https://github.com/fergardi/nucleus',
+              link: null,
+              description: 'This is a little project I did to speed up new projects. It comes with NodeJS, VueJS, VueMaterial, ESLint, and Karma. It offers a simple but yet created SPA web app with sidebar and navbar, custom color theming, responsive and scalable. Also can be deployed in APK or IPA format using the Cordova framework, and EXE or APP format using the Electron framework.',
+              items: [
+                {
+                  icon: 'devices_other',
+                  title: 'Platforms',
+                  subtitle: 'Web, Mobile, Desktop'
+                },
+                {
+                  icon: 'code',
+                  title: 'Code',
+                  subtitle: 'VueJS'
+                },
+                {
+                  icon: 'storage',
+                  title: 'Database',
+                  subtitle: 'Nope'
+                },
+                {
+                  icon: 'view_compact',
+                  title: 'Design',
+                  subtitle: 'Material Design + VueMaterial'
+                },
+                {
+                  icon: 'device_hub',
+                  title: 'Deployable',
+                  subtitle: 'Chrome, Cordova, Electron'
                 }
               ]
             }
