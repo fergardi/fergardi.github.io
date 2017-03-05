@@ -22,7 +22,7 @@
             md-icon.md-primary subject
             label Message
             md-textarea(v-model="message", required)
-          vue-recaptcha.flex.center.captcha(sitekey="key", ref="recaptcha", @verify="onVerify", @expired="onExpired")
+          vue-recaptcha.flex.center.captcha(v-bind:sitekey="key", ref="recaptcha", @verify="onVerify", @expired="onExpired", theme="dark", size="compact")
           .flex.center
             md-button.md-raised.md-primary(type="submit") Send
             md-button.md-raised(type="reset") Clear
@@ -40,7 +40,7 @@
         message: '',
         alert: '',
         captcha: false,
-        key: '6Ld__RUUAAAAAOPJ6UjH6mx5kwmfZUxsN4W7Z0Q1'
+        key: '6LfAuxcUAAAAAA14N74o87Nq2tvf5QKkiuijIIwq'
       }
     },
     methods: {

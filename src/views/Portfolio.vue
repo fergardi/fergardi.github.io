@@ -328,19 +328,19 @@
                 {
                   icon: 'attach_money',
                   title: 'Junior Developer',
-                  subtitle: 'University of León, Spain',
+                  subtitle: 'Universidad de León, Spain',
                   date: '2012-2015'
                 },
                 {
                   icon: 'attach_money',
                   title: 'IT service',
-                  subtitle: 'Diary of León, Spain',
+                  subtitle: 'Diario de León, Spain',
                   date: '2010-2011'
                 },
                 {
                   icon: 'attach_money',
                   title: 'Junior Developer',
-                  subtitle: 'University of León, Spain',
+                  subtitle: 'Universidad de León, Spain',
                   date: '2009-2010'
                 },
                 {
@@ -358,13 +358,28 @@
               items: [
                 {
                   icon: 'code',
+                  title: 'HTML5',
+                  subtitle: 'JADE, PUG'
+                },
+                {
+                  icon: 'code',
+                  title: 'CSS3',
+                  subtitle: 'LESS, SASS, SCSS, STYLUS, Twitter Bootstrap, Vue Material'
+                },
+                {
+                  icon: 'code',
+                  title: 'JS',
+                  subtitle: 'NodeJS, VueJS, AngularJS, jQuery'
+                },
+                {
+                  icon: 'code',
                   title: 'PHP',
-                  subtitle: 'Frameworks: Symfony2'
+                  subtitle: 'Symfony2'
                 },
                 {
                   icon: 'code',
                   title: 'C#',
-                  subtitle: 'DotNet'
+                  subtitle: 'ASPNET'
                 },
                 {
                   icon: 'code',
@@ -374,22 +389,7 @@
                 {
                   icon: 'code',
                   title: 'SQL',
-                  subtitle: 'Engines: MySQL, MariaDB, MongoDB, MSSQLServer'
-                },
-                {
-                  icon: 'code',
-                  title: 'HTML5',
-                  subtitle: 'Preprocessors: JADE, PUG'
-                },
-                {
-                  icon: 'code',
-                  title: 'CSS3',
-                  subtitle: 'Preprocessors: LESS, SASS, SCSS, STYLUS; Frameworks: Twitter Bootstrap, Vue Material, flexboxgrid'
-                },
-                {
-                  icon: 'code',
-                  title: 'JAVASCRIPT',
-                  subtitle: 'Frameworks: jQuery, VueJS'
+                  subtitle: 'MariaDB, MongoDB, MSSQLServer'
                 }
               ]
             }
