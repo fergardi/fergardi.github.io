@@ -1,0 +1,202 @@
+[
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["orkish"],
+    "id": "cave",
+    "name": "location.cave.name",
+    "description": "location.cave.description",
+    "image": "/assets/images/locations/cave.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["undead"],
+    "id": "graveyard",
+    "name": "location.graveyard.name",
+    "description": "location.graveyard.description",
+    "image": "/assets/images/locations/graveyard.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["golem", "undead"],
+    "id": "dungeon",
+    "name": "location.dungeon.name",
+    "description": "location.dungeon.description",
+    "image": "/assets/images/locations/dungeon.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["elemental"],
+    "id": "mine",
+    "name": "location.mine.name",
+    "description": "location.mine.description",
+    "image": "/assets/images/locations/mine.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["animal", "reptile"],
+    "id": "forest",
+    "name": "location.forest.name",
+    "description": "location.forest.description",
+    "image": "/assets/images/locations/forest.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["human"],
+    "id": "cathedral",
+    "name": "location.cathedral.name",
+    "description": "location.cathedral.description",
+    "image": "/assets/images/locations/cathedral.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["giant"],
+    "id": "mountain",
+    "name": "location.mountain.name",
+    "description": "location.mountain.description",
+    "image": "/assets/images/locations/mountain.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["demon"],
+    "id": "volcano",
+    "name": "location.volcano.name",
+    "description": "location.volcano.description",
+    "image": "/assets/images/locations/volcano.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["reptile"],
+    "id": "lake",
+    "name": "location.lake.name",
+    "description": "location.lake.description",
+    "image": "/assets/images/locations/lake.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["dragon"],
+    "id": "nest",
+    "name": "location.nest.name",
+    "description": "location.nest.description",
+    "image": "/assets/images/locations/nest.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["human", "dragon"],
+    "id": "castle",
+    "name": "location.castle.name",
+    "description": "location.castle.description",
+    "image": "/assets/images/locations/castle.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["human"],
+    "id": "barrack",
+    "name": "location.barrack.name",
+    "description": "location.barrack.description",
+    "image": "/assets/images/locations/barrack.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["animal", "reptile"],
+    "id": "island",
+    "name": "location.island.name",
+    "description": "location.island.description",
+    "image": "/assets/images/locations/island.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["giant", "golem"],
+    "id": "monolith",
+    "name": "location.monolith.name",
+    "description": "location.monolith.description",
+    "image": "/assets/images/locations/monolith.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["giant", "demon"],
+    "id": "ruin",
+    "name": "location.ruin.name",
+    "description": "location.ruin.description",
+    "image": "/assets/images/locations/ruin.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["reptile"],
+    "id": "ship",
+    "name": "location.ship.name",
+    "description": "location.ship.description",
+    "image": "/assets/images/locations/ship.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["undead", "human"],
+    "id": "town",
+    "name": "location.town.name",
+    "description": "location.town.description",
+    "image": "/assets/images/locations/town.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["dragon", "elemental"],
+    "id": "shrine",
+    "name": "location.shrine.name",
+    "description": "location.shrine.description",
+    "image": "/assets/images/locations/shrine.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["giant", "orkish"],
+    "id": "totem",
+    "name": "location.totem.name",
+    "description": "location.totem.description",
+    "image": "/assets/images/locations/totem.png"
+  },
+  {
+    "type": "location",
+    "subtype": "battle",
+    "faction": "grey",
+    "families": ["undead"],
+    "id": "pyramid",
+    "name": "location.pyramid.name",
+    "description": "location.pyramid.description",
+    "image": "/assets/images/locations/pyramid.png"
+  }
+]

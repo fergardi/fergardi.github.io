@@ -1,0 +1,32 @@
+[
+  {
+    "id": "few",
+    "type": "pack",
+    "subtype": "resource",
+    "name": "pack.few.name",
+    "description": "pack.few.description",
+    "image": "/assets/images/packs/few.png",
+    "quantity": 20,
+    "money": 0.99
+  },
+  {
+    "id": "many",
+    "type": "pack",
+    "subtype": "resource",
+    "name": "pack.many.name",
+    "description": "pack.many.description",
+    "image": "/assets/images/packs/many.png",
+    "quantity": 50,
+    "money": 1.99
+  },
+  {
+    "id": "lot",
+    "type": "pack",
+    "subtype": "resource",
+    "name": "pack.lot.name",
+    "description": "pack.lot.description",
+    "image": "/assets/images/packs/lot.png",
+    "quantity": 100,
+    "money": 2.99
+  }
+]

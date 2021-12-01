@@ -1,0 +1,10 @@
+{
+  "paginator": {
+    "itemsPerPageLabel": "Items per page",
+    "nextPageLabel": "Next page",
+    "previousPageLabel": "Previous page",
+    "firstPageLabel": "First page",
+    "lastPageLabel": "Last page",
+    "rangeLabelIntl": "Showing {{ start }} - {{ end }} of {{ length }} items"
+  }
+}
